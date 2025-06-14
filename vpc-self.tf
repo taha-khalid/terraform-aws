@@ -8,7 +8,7 @@ resource "random_string" "suffix" {
 
 # Setting the cluster name using the random string generated above.
 locals {
-  cluster_name = "taha-eks-${random_string.suffix.result}"
+  cluster_name = "taha-eks-cluster-${random_string.suffix.result}"
 }
 
 module "vpc" {
