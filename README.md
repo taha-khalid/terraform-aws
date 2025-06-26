@@ -1,6 +1,6 @@
 # 🚀 EKS Cluster with Terraform | Secure VPC + Auto-Scaling Node Group
 
-This project provisions a secure, production-ready **Amazon EKS cluster** using **Terraform**, complete with a custom **VPC**, private/public subnets, and an **auto-scaling managed node group**.
+This project provisions a secure **Amazon EKS cluster** using **Terraform**, complete with a custom **VPC**, private/public subnets, and an **auto-scaling managed node group**.
 
 ## 📌 Overview
 
