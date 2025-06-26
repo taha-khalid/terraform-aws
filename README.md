@@ -84,7 +84,7 @@ Use IAM roles and aws-auth config map for fine-grained access control.
 
 ### 📘 Prerequisites
 
-Terraform ≥ 1.12
-AWS CLI
-kubectl
-IAM permissions for EKS/VPC/EC2
+- Terraform ≥ 1.12
+- AWS CLI
+- kubectl
+- IAM permissions for EKS/VPC/EC2
