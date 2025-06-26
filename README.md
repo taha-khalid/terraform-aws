@@ -15,7 +15,7 @@ This project provisions a secure, production-ready **Amazon EKS cluster** using 
 
 ## 📐 Architecture
 
-![EKS Architecture Diagram](../../Project-Screenshots/Architecture-Diagram-AWS-EKS.png)
+![EKS Architecture Diagram](./Architecture-Diagram-AWS-EKS.png)
 
 ---
 
