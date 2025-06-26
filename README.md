@@ -30,43 +30,61 @@ This project provisions a secure, production-ready **Amazon EKS cluster** using 
 ├── backend.tf                    # Remote backend config
 ├── versions.tf                   # Defining the versions of required providers
 ├── README.md                     # Project documentation
+```
 
-🚀 Getting Started
-1. Clone the Repo
-git clone https://github.com/taha-khalid/terraform-aws.git
-cd terraform-aws
+# 🚀 Getting Started
 
-2. Configure Backend & Variables
+1.  Clone the Repo
+
+```bash
+   git clone https://github.com/taha-khalid/terraform-aws.git
+   cd terraform-aws
+```
+
+# 2. Configure Backend & Variables
+
 Update the backend.tf and variables.tf file with your remote backend details and the changes you want to add in variables like changing region etc.
 
 Note: if you are not using or have not configured AWS CLI you would need to define a terraform.tfvars to for authenticating and authorizing terraform to aws access.
 
-3. Initialize Terraform
-terraform init
+# 3. Initialize Terraform
 
-4. Plan & Apply
+```bash
+ terraform init
+```
+
+# 4. Plan & Apply
+
+```bash
 terraform plan
 terraform apply
+```
 
-🔧 kubectl Access
+# 🔧 kubectl Access
+
 Once the EKS cluster is provisioned:
+
+```bash
 aws eks --region <your-region> update-kubeconfig --name <your-cluster-name>
 kubectl get nodes
+```
 
-📈 Auto-Scaling Node Group
+# 📈 Auto-Scaling Node Group
+
 The node group is configured to:
 Minimum nodes: 2
 Maximum nodes: 4
 Automatically scales based on pod resource requests and scheduling pressure.
 
-🛡 Security Notes
+# 🛡 Security Notes
+
 The EKS control plane is deployed in private subnets.
 Only API endpoint access is public, restricted by your IP/CIDR.
 Use IAM roles and aws-auth config map for fine-grained access control.
 
-📘 Prerequisites
+# 📘 Prerequisites
+
 Terraform ≥ 1.12
 AWS CLI
 kubectl
 IAM permissions for EKS/VPC/EC2
-```
