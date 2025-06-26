@@ -72,15 +72,17 @@ kubectl get nodes
 ### 📈 Auto-Scaling Node Group
 
 The node group is configured to:
-Minimum nodes: 2
-Maximum nodes: 4
+
+- Minimum nodes: 2
+- Maximum nodes: 4
+
 Automatically scales based on pod resource requests and scheduling pressure.
 
 ### 🛡 Security Notes
 
-The EKS control plane is deployed in private subnets.
-Only API endpoint access is public, restricted by your IP/CIDR.
-Use IAM roles and aws-auth config map for fine-grained access control.
+- The EKS control plane is deployed in private subnets.
+- Only API endpoint access is public, restricted by your IP/CIDR.
+- Use IAM roles and aws-auth config map for fine-grained access control.
 
 ### 📘 Prerequisites
 
