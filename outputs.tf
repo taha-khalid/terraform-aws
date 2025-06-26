@@ -21,3 +21,18 @@ output "region" {
 output "oidc_provider_arn" {
   value = module.eks.oidc_provider_arn
 }
+
+output "vpc_id" {
+  description = "VPC ID where the EKS cluster is deployed."
+  value       = module.vpc.vpc_id
+}
+
+output "private_subnets" {
+  description = "Private subnets in the VPC."
+  value       = module.vpc.private_subnets
+}
+
+output "public_subnets" {
+  description = "Public subnets in the VPC."
+  value       = module.vpc.public_subnets
+}
